@@ -262,31 +262,31 @@ def Inicio_Sesion():
 
 def ventana_final():
     ventana = Tk()
-    ventana.configure(bg="beige")
+    ventana.configure(bg="paleturquoise")
     ventana.configure(padx=80)
     ventana.configure(pady=50)
     ventana.title("Practica1_CRUD") 
     # Crear los campos de entrada para los datos del alumno
-    Label(ventana, text="Id:").grid(row=0, column=0, padx=5, pady=5)
+    Label(ventana, text="Id:", bg="lightcyan").grid(row=0, column=0, padx=5, pady=5)
     entrada_idx = Entry(ventana)
     entrada_idx.grid(row=0, column=1, padx=5, pady=5)
 
-    Label(ventana, text="Nombre:").grid(row=1, column=0, padx=5, pady=5)
+    Label(ventana, text="Nombre:", bg="lightcyan").grid(row=1, column=0, padx=5, pady=5)
     entrada_nombrex = Entry(ventana)
     entrada_nombrex.grid(row=1, column=1, padx=5, pady=5)
 
-    Label(ventana, text="Edad:").grid(row=2, column=0, padx=5, pady=5)
+    Label(ventana, text="Edad:", bg="lightcyan").grid(row=2, column=0, padx=5, pady=5)
     entrada_edadx = Entry(ventana)
     entrada_edadx.grid(row=2, column=1, padx=5, pady=5)
 
-    Label(ventana, text="Email:").grid(row=3, column=0, padx=5, pady=5)
+    Label(ventana, text="Email:", bg="lightcyan").grid(row=3, column=0, padx=5, pady=5)
     entrada_emailx = Entry(ventana)
     entrada_emailx.grid(row=3, column=1, padx=5, pady=5)
 
     # Crear los botones para agregar, actualizar y eliminar alumnos
-    Button(ventana,bg="beige", text="Agregar Jugador", command=agregar_alumno).grid(row=0, column=2, padx=5, pady=5)
-    Button(ventana, text="Actualizar Jugador", command=actualizar_alumno).grid(row=1, column=2, padx=5, pady=5)
-    Button(ventana, text="Eliminar Jugador", command=eliminar_alumno).grid(row=2, column=2, padx=5, pady=5)
+    Button(ventana, bg="lightcyan", text="Agregar Jugador", command=agregar_alumno).grid(row=0, column=2, padx=5, pady=5)
+    Button(ventana, bg="lightcyan", text="Actualizar Jugador", command=actualizar_alumno).grid(row=1, column=2, padx=5, pady=5)
+    Button(ventana, bg="lightcyan", text="Eliminar Jugador", command=eliminar_alumno).grid(row=2, column=2, padx=5, pady=5)
 
     # Crear la tabla para mostrar los alumnos
     tabla_alumnosx = Frame(ventana)
